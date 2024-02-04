@@ -1,0 +1,160 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+  background-color: #f2f5f7;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+label {
+  font-size: 1rem;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 250px;
+}
+
+textarea {
+  resize: none;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(300px, 400px) auto;
+  grid-template-rows: 80px auto;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #478bf7;
+  color: #fff;
+  grid-column: 1 / 3;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+.sidebar {
+  background-color: #fff;
+  border-right: 5px solid #335a99;
+  padding: 2rem;
+}
+
+.sidebar-title {
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.new-project {
+  margin-bottom: 1rem;
+  
+}
+.new-project :hover{
+  background: #335a99;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.4rem;
+ }
+
+
+.project-form {
+  margin-bottom: 1.2rem;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.project :hover{
+ background: #335a99;
+ font-size: 1.5rem;
+ font-weight: bold;
+ padding: 0.5rem 1.5rem;
+ border-radius: 0.4rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+}
+
+.project-title:hover {
+  cursor: pointer;
+}
+
+.project-overview {
+  padding: 2rem 3rem;
+}
+
+.selected-project {
+  font-size: 1.4rem;
+}
+
+.todo-form {
+  margin: 1rem 0;
+}
+
+.todos {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.todo {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px -4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px -4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px -4px rgba(0, 0, 0, 0.5);
+}
+
+.todo p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo p:first-of-type {
+  font-weight: 700;
+}
